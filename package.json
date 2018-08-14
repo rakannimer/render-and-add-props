@@ -1,0 +1,14 @@
+{
+  "name": "render-and-add-props",
+  "version": "0.3.0",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "author": "rakannimer <rakannimer@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/rakannimer/render-and-add-props"
+  },
+  "peerDependencies": {
+    "react" :">=15"
+  }
+}
