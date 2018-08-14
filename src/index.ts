@@ -4,9 +4,11 @@ export interface NewProps {
   [key: string]: any;
 }
 
-export type Renderable = (
-  props: NewProps
-) => any | React.ComponentType<NewProps> | React.StatelessComponent<NewProps>;
+export type Renderable =
+  | ((props: NewProps) => any)
+  | React.ReactNode
+  | React.ReactNodeArray
+  | React.Component<NewProps, any>;
 
 export const renderAndAddProps = (renderable: Renderable, props: NewProps) => {
   if (typeof renderable === "function") {
