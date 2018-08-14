@@ -1,12 +1,16 @@
 {
   "name": "render-and-add-props",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "umd": "dist/index.umd.js",
   "types": "dist/index.d.ts",
   "author": "rakannimer <rakannimer@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "prepublish": "npm run build"
+  },
   "repository": {
     "url": "https://github.com/rakannimer/render-and-add-props"
   },
